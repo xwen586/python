@@ -22,6 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ch01\a01var.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="hello.py">
       <SubType>Code</SubType>
     </Compile>
