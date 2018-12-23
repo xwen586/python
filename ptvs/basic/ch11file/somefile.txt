@@ -1,0 +1,6 @@
+Hello, World£¡
+
+this is file append write£¡
+isn't a
+new line append
+

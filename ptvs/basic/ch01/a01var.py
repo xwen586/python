@@ -22,3 +22,24 @@ print(b)
 
 name = "ada lovelace"
 print(name.title())  # 首字母大写
+
+print(repr("Hello,\nworld!"))
+print( r'Let\'s go!')   #原始字符串
+
+# 字符串拼接
+s1 = "Let's say " '"Hello, world!"'  #书写字符串
+s2 = "Hello, " "world！" + "python!"  # 拼接字符串
+print(s1)
+x = "Hello, "
+
+x = 12
+y = 3
+#print("x * y = " + `x*y`)   #python3 中不使用反引号
+print("x * y = " + repr(x*y))
+
+
+#输入
+input("The meaning of life: ")
+x = input("x: ")
+y = input("y: ")
+print("x * y = " + str(int(x) * int(y)))

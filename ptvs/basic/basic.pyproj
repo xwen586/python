@@ -22,7 +22,58 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ch11file\a01file.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ch01\a01var.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch01\a02fun.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch01\a03encode.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch02\a01sequ.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch02\a02list.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch04dict\a01dict.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch06func\a01func.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch07class\a01class.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch12gui\a01tk.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch12gui\a01wx.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch13db\a01sqlite.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch14net\a01client.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch14net\a01server.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch14net\a01url.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch14net\a02serv.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch14net\a03forksvr.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch14net\a03thrdsvr.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="hello.py">
@@ -31,6 +82,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ch01\" />
+    <Folder Include="ch02\" />
+    <Folder Include="ch06func\" />
+    <Folder Include="ch04dict\" />
+    <Folder Include="ch07class\" />
+    <Folder Include="ch11file\" />
+    <Folder Include="ch12gui\" />
+    <Folder Include="ch13db\" />
+    <Folder Include="ch14net\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="readme.txt" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
