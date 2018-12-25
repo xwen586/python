@@ -73,7 +73,67 @@
     <Compile Include="ch14net\a03forksvr.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ch14net\a03pollsvr.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch14net\a03selesvr.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ch14net\a03thrdsvr.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch15web\a01scrap.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch15web\a02parser.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch15web\a03soup.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch15web\htbin\a04cgi.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch15web\htbin\a06cgi2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch15web\htbin\a07form.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch16test\a01t.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch16test\a02doct.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch16test\a03unit.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch17ext\a01ext.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch18pack\hello.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch18pack\setup.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch18pack\setup2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch19oth\a01conf.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch19oth\a02log.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch21pdf\a01rpt.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch21pdf\a02proto.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch21pdf\a03sunspots.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="hello.py">
@@ -90,8 +150,17 @@
     <Folder Include="ch12gui\" />
     <Folder Include="ch13db\" />
     <Folder Include="ch14net\" />
+    <Folder Include="ch15web\" />
+    <Folder Include="ch15web\htbin\" />
+    <Folder Include="ch16test\" />
+    <Folder Include="ch17ext\" />
+    <Folder Include="ch18pack\" />
+    <Folder Include="ch19oth\" />
+    <Folder Include="ch21pdf\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ch15web\htbin\a05faulty.py" />
+    <Content Include="ch19oth\area.ini" />
     <Content Include="readme.txt" />
   </ItemGroup>
   <PropertyGroup>

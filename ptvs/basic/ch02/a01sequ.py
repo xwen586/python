@@ -1,12 +1,12 @@
 #-*- coding:utf-8 -*-
-# ĞòÁĞ sequence
+# åºåˆ— sequence
 
 edward = ['Edward Gumby', 42]
 john = ['John Smith', 50]
 database = [edward,  john]
 print( database )
 
-# Ë÷Òı²Ù×÷
+# ç´¢å¼•æ“ä½œ
 g = 'Hello'
 print( g[0] )
 
@@ -17,38 +17,37 @@ months = ['January', 'February', 'March',
 print( months[6])
 
 
-# ÇĞÆ¬£¨Slicing£©
+# åˆ‡ç‰‡ï¼ˆSlicingï¼‰
 n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 n[ 3:6 ]    # =[4, 5, 6]
 n[ :3]       # =[1, 2, 3]
-n[-3:-1]   # =[8, 9]   µ¹ÊıµÚÒ»£¬²»ÊÇ10
+n[-3:-1]   # =[8, 9]   å€’æ•°ç¬¬ä¸€ï¼Œä¸æ˜¯10
 n[-3:]      # =[8, 9, 10]
 
-#²½³¤
+#æ­¥é•¿
 n[0:10:2]  # =[1, 3, 5, 7, 9]
 n[::4]    # =[1, 5, 9]
 n[::-2]   # =[10, 8, 6, 4, 2]
 n[8::-2]   # =[9, 7, 5, 3, 1]
 
-# ĞòÁĞÏà¼Ó
+# åºåˆ—ç›¸åŠ 
 a = [1, 2, 3] + [4, 5, 6]
-# Ïà³Ë Multiplication
+# ç›¸ä¹˜ Multiplication
 p =  'python ' * 5
 q = [36] * 10
 s = []*10     # len(s) = 0
 s = [None]*10   # len(s) = 10
 
-# ÅĞ¶Ï³ÉÔ±
+# åˆ¤æ–­æˆå‘˜
 users = ['mlh', 'foo', 'bar']
 input('Enter your user name: ') in users
 s = 'Hello Python World!'
 'thon' in s
 
-# ³¤¶È£¬×î´ó¡¢×îĞ¡
+# é•¿åº¦ï¼Œæœ€å¤§ã€æœ€å°
 numbers = [100, 34, 678]
 len(numbers)   # =3
 max(numbers)  # =678
 min(numbers)  # =34
 max(2, 3)   # =3
 min(9, 3, 2, 5)  # =2
-

@@ -243,3 +243,13 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/ptvs/basic/ch17ext/JavaObj.class
+/ptvs/basic/ch17ext/JythonTest.class
+/ptvs/basic/ch17ext/test.jar
+/ptvs/basic/ch16test/__pycache__/a02doct.cpython-37.pyc
+/ptvs/basic/report2.pdf
+/spyder/spyder/hello.py
+/spyder/spyder/.spyproject/workspace.ini
+/spyder/spyder/.spyproject/vcs.ini
+/spyder/spyder/.spyproject/encoding.ini
+/spyder/spyder/.spyproject/codestyle.ini
