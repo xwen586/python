@@ -7,6 +7,14 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "basic", "basic\basic.pyproj
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "expert", "expert\expert.pyproj", "{78E45EE6-266A-4610-B8D6-B8755440DEFB}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "pylearn", "..\..\..\..\learn\python\pyvs\pylearn\pylearn.pyproj", "{C96056FE-DBA6-4295-8E20-203CEF8C6571}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonML1", "..\..\..\..\learn\python\pyvs\PythonML1\PythonML1.pyproj", "{97C0534D-E708-4CF3-B741-B24A074C322D}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "pythMLBlue", "pythMLBlue\pythMLBlue.pyproj", "{A3508B2F-2817-4C76-96DA-D60C674268D0}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "pythMLinAct", "pythMLinAct\pythMLinAct.pyproj", "{7A9B57E7-D3D7-483C-9DCB-460CDF58933F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +25,14 @@ Global
 		{B266321B-1757-4FC9-AECF-087D1E2BB5EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78E45EE6-266A-4610-B8D6-B8755440DEFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{78E45EE6-266A-4610-B8D6-B8755440DEFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C96056FE-DBA6-4295-8E20-203CEF8C6571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C96056FE-DBA6-4295-8E20-203CEF8C6571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97C0534D-E708-4CF3-B741-B24A074C322D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97C0534D-E708-4CF3-B741-B24A074C322D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3508B2F-2817-4C76-96DA-D60C674268D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3508B2F-2817-4C76-96DA-D60C674268D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A9B57E7-D3D7-483C-9DCB-460CDF58933F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A9B57E7-D3D7-483C-9DCB-460CDF58933F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

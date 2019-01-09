@@ -1,5 +1,5 @@
 #-*- coding:utf-8 -*-
-# 列表List
+# 列表 List
 
 list('Hello')
 
