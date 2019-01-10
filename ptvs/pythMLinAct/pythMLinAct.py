@@ -10,7 +10,7 @@ environment = []
 
 lib = []
 
-reference = ['a-Python机器学习实战 Machine Learning in Action',
+reference = ['a-Python鏈哄櫒瀛︿範瀹炴垬 Machine Learning in Action',
              ''
              ]
 

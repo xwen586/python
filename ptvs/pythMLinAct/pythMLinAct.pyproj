@@ -39,6 +39,9 @@
     <Compile Include="ch03dt\a1tree.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ch04bayes\a1bayes.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="pythMLinAct.py" />
   </ItemGroup>
   <ItemGroup>
@@ -48,6 +51,7 @@
     <Folder Include="ch01basic\" />
     <Folder Include="ch02knn\" />
     <Folder Include="ch03dt\" />
+    <Folder Include="ch04bayes\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
