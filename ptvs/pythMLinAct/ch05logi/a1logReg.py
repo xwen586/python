@@ -27,7 +27,12 @@ def loadDataSet():
 
 # Sigmoid函数，又叫Logistic函数
 def sigmoid(inX):
-    return 1.0/(1+exp(-inX))
+    # 有警告：RuntimeWarning: overflow encountered in exp
+    # return 1.0/(1+exp(-inX))
+    if inX>=0:
+        return 1.0/(1+exp(-inX))
+    else:
+        return exp(inX)/(1+exp(inX))
 
 ''' 梯度上升算法，伪代码如下：
 >每个回归系数初始化为1
