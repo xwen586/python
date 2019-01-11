@@ -42,6 +42,9 @@
     <Compile Include="ch04bayes\a1bayes.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ch05logi\a1logReg.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="pythMLinAct.py" />
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +55,7 @@
     <Folder Include="ch02knn\" />
     <Folder Include="ch03dt\" />
     <Folder Include="ch04bayes\" />
+    <Folder Include="ch05logi\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

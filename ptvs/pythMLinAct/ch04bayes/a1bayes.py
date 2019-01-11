@@ -2,11 +2,16 @@
 # a1bayes.py
 """ 基于概率论的分类方法：朴素贝叶斯
 是用于文档分类的常用算法。
+从文本中获取特征，特征是来自文本的词条(token)，即单词。然后将每一个文本片段表示为一个词条向量，其中值为1表示词条出现在文档中，0表示词条未出现。
+侮辱类和非侮辱类，使用1和0分别表示。
 """
 from numpy import *
 
 '''------------------ 准备数据：从文本中构建词向量 ------------------
-如何将一组单词转换为一组数字
+如何将一组单词转换为一组数字:
+多个文档(postingList) ；标注各文档侮辱类标记(classVec)
+生成词汇表 createVocabList()  是将文档的词汇汇总
+词表到向量的转换
 >>> from imp import reload
 >>> import a1bayes as bayes
 >>> listOPosts,listClasses = bayes.loadDataSet()
@@ -49,6 +54,7 @@ def setOfWords2Vec(vocabList, inputSet):
 
 
 '''------------------ 训练算法：从词向量计算概率 ------------------
+在给定文档类别条件下词汇表中单词的出现概率
 如何使用这些数字计算概率，如下命令外，参见demo01()
 >>> from numpy import *
 >>> reload(bayes)
