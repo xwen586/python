@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GET VS. POST</title>
+    <script language="javascript">
+        var xmlHttp;
+        function createXMLHttpRequest(){
+            if(window.ActiveXObject)
+                xmlHttp = new ActiveXObject("Microsoft.XMLHttp");
+            else if(window.XMLHttpRequest)
+                xmlHttp = new XMLHttpRequest();
+        }
+        function createQueryString(){
+            var firstName = document.getElementById("firstName").value;
+            var birthday = document.getElementById("birthday").value;
+            var queryString = "firstName=" + firstName + "&birthday=" + birthday;
+            return encodeURI(encodeURI(queryString));	//两次编码解决中文乱码问题
+        }
+        function doRequestUsingGET(){
+            createXMLHttpRequest();
+            var queryString = "a02.jsp?";
+            queryString += createQueryString() + "&timestamp=" + new Date().getTime();
+            var responseDiv = document.getElementById("serverResponse");
+            responseDiv.innerHTML = "Client send(GET) message:<br/>" + queryString + "<br/>";
+            xmlHttp.onreadystatechange = handleStateChange;
+            xmlHttp.open("GET", queryString);
+            xmlHttp.send(null);
+        }
+        function doRequestUsingPOST(){
+            createXMLHttpRequest();
+            var url = "a02.jsp?timestamp=" + new Date().getTime();
+            var queryString = createQueryString();
+            var responseDiv = document.getElementById("serverResponse");
+            responseDiv.innerHTML = "Client send(POST) message:<br/>" + queryString + "<br/>";
+            xmlHttp.open("POST", url );
+            xmlHttp.onreadystatechange = handleStateChange;
+
+            //POST发送请求必须设置请求头
+            // application/x-www-form-urlencoded    表单字符类型
+            // multiline/form-data      表单类型
+            // application/json
+            // text/xml
+            xmlHttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+            xmlHttp.send(queryString);
+        }
+
+        function handleStateChange(){
+            if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+                var responseDiv = document.getElementById("serverResponse");
+                //xmlHttp返回responseText时，是按UTF-8编码。
+                // 因此POST发送时用encodeURI()编码，接收时decodeURI()解码
+                responseDiv.innerHTML += "Client recieve message:<br/>" + decodeURI(xmlHttp.responseText) + "<hr/>";	//解码。
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>输入姓名和生日</h2>
+    <form action="/aj/a02.jsp" method="post">
+        {% csrf_token %}
+        <p>姓名：<input type="text" id="firstName"/>Tomcat</p>
+        <p>生日：<input type="text" id="birthday" />8.3.54</p>
+        <input type="submit" value="可用POST">
+    </form>
+    <form>
+        <input type="button" value="GET" onclick="doRequestUsingGET()" />
+        <input type="button" value="POST" onclick="doRequestUsingPOST()" />
+    </form>
+    <div id="serverResponse"></div>
+</body>
+</html>

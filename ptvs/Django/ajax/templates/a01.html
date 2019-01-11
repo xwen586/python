@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Step01-仅客户端参数显示</title>
+    <script language="javascript">
+        var xmlHttp=null;
+        var oDiv;
+        function createXMLHttpRequest(){
+            if(window.ActiveXObject) {
+                xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+                //document.writeln("Microsoft.XMLHTTP");
+                oDiv.innerHTML += "Microsoft.XMLHTTP <br>";
+            }else if(window.XMLHttpRequest) {// 兼容 IE7+, Firefox, Chrome, Opera, Safari
+                xmlHttp = new XMLHttpRequest();
+                oDiv.innerHTML += "XMLHttpRequest <br>";
+            }
+        }
+
+        function startRequest(){
+            oDiv = document.getElementById("display");
+            if(xmlHttp==null) createXMLHttpRequest();
+            var sUrl = "a01req"; //+ new Date().getTime();	//地址不断的变化9-1.aspx?
+            xmlHttp.open("GET", sUrl, true); //true-表示异步，false-表示同步
+            xmlHttp.onreadystatechange = function(){//绑定监听函数
+                //数据接收成功
+                if(xmlHttp.readyState < 4){
+                    //0-未初始化；1-加载中；2-加载完；3-内部交互；4-访问完成
+                    oDiv.innerHTML += "readyState=" + xmlHttp.readyState + "<br/>"
+                }else if(xmlHttp.readyState == 4 ) {//4-完成
+                    if(xmlHttp.status == 200) { //响应成功
+                        oDiv.innerHTML += "服务器返回: " + decodeURI(xmlHttp.responseText) + "<br/>";
+                    }else{
+                        oDiv.innerHTML += "服务器返回: status=" + xmlHttp.status + "<br/>";
+                    }
+                 }else {
+                    oDiv.innerHTML += "Some Error happened! <br/>" +
+                        decodeURI(xmlHttp.responseText) + "<br/>";
+                }
+            }
+            xmlHttp.send(null); //发送请求
+        }
+    </script>
+</head>
+<body>
+<body>
+    <input type="button" value="测试异步通讯" onClick="startRequest()">
+    <hr>
+    <div id="display"></div>
+</body>
+</html>

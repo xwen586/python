@@ -4,6 +4,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <Name>Django</Name>
     <RootNamespace>Django</RootNamespace>
+    <WebBrowserPort>8001</WebBrowserPort>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -27,6 +28,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ajax\admin.py" />
+    <Compile Include="ajax\apps.py" />
+    <Compile Include="ajax\migrations\__init__.py" />
+    <Compile Include="ajax\models.py" />
+    <Compile Include="ajax\tests.py" />
+    <Compile Include="ajax\urls.py" />
+    <Compile Include="ajax\views.py" />
+    <Compile Include="ajax\__init__.py" />
     <Compile Include="app\forms.py" />
     <Compile Include="app\models.py" />
     <Compile Include="app\tests.py" />
@@ -40,6 +49,9 @@
     <Compile Include="Django\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ajax\" />
+    <Folder Include="ajax\migrations\" />
+    <Folder Include="ajax\templates\" />
     <Folder Include="app\" />
     <Folder Include="app\migrations\" />
     <Folder Include="app\static\" />
@@ -52,6 +64,8 @@
     <Folder Include="Django\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ajax\templates\a01.html" />
+    <Content Include="ajax\templates\a02.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
