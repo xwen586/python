@@ -27,6 +27,9 @@
     <Compile Include="ch01basic\a01numpy.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ch01basic\a02sklearn.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ch02knn\a1knn.py">
       <SubType>Code</SubType>
     </Compile>
@@ -34,6 +37,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ch02knn\a3handw.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch02knn\b1fruit.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ch03dt\a1tree.py">
@@ -45,6 +51,10 @@
     <Compile Include="ch05logi\a1logReg.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ch06svm\a1svm.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch06svm\a1svm1.py" />
     <Compile Include="pythMLinAct.py" />
   </ItemGroup>
   <ItemGroup>
@@ -56,6 +66,7 @@
     <Folder Include="ch03dt\" />
     <Folder Include="ch04bayes\" />
     <Folder Include="ch05logi\" />
+    <Folder Include="ch06svm\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
