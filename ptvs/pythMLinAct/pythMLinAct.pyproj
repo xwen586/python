@@ -55,6 +55,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ch06svm\a1svm1.py" />
+    <Compile Include="ch07adaboost\a1adabt.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="pythMLinAct.py" />
   </ItemGroup>
   <ItemGroup>
@@ -67,6 +70,7 @@
     <Folder Include="ch04bayes\" />
     <Folder Include="ch05logi\" />
     <Folder Include="ch06svm\" />
+    <Folder Include="ch07adaboost\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
