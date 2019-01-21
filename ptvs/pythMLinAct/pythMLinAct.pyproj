@@ -58,6 +58,9 @@
     <Compile Include="ch07adaboost\a1adabt.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ch08regresn\a1regr.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="pythMLinAct.py" />
   </ItemGroup>
   <ItemGroup>
@@ -71,6 +74,7 @@
     <Folder Include="ch05logi\" />
     <Folder Include="ch06svm\" />
     <Folder Include="ch07adaboost\" />
+    <Folder Include="ch08regresn\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
