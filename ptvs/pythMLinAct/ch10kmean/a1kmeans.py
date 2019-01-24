@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # a1kmeans.py
 """ K-均值聚类算法
+利用K-均值聚类算法对未标注数据分组
 """
 from numpy import *
 import matplotlib
@@ -89,7 +90,7 @@ def demo02():
 
 
 ''' -------------- 二分K-均值算法 --------------
-为克服K-均值算法收敛于局部最小值的问题
+为克服K-均值算法收敛于局部最小值的问题,二分K-均值的聚类效果要好于K-均值算法。
 '''
 #二分K-均值聚类算法
 #@dataSet:待聚类数据集
@@ -157,8 +158,8 @@ def clusterClubs(numClust=5):
                     'd', 'v', 'h', '>', '<']
     axprops = dict(xticks=[], yticks=[])
     ax0=fig.add_axes(rect, label='ax0', **axprops)
-    #imgP = plt.imread('Portland.png')
-    #ax0.imshow(imgP)
+    imgP = plt.imread(r'./ch10kmean/data/Portland.png')
+    ax0.imshow(imgP)
     ax1=fig.add_axes(rect, label='ax1', frameon=False)
     for i in range(numClust):
         ptsInCurrCluster = datMat[nonzero(clustAssing[:,0].A==i)[0],:]
