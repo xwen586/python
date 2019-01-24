@@ -61,6 +61,15 @@
     <Compile Include="ch08regresn\a1regr.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ch09tree\a1cart.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch09tree\a1trgui.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch10kmean\a1kmeans.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="pythMLinAct.py" />
   </ItemGroup>
   <ItemGroup>
@@ -75,6 +84,8 @@
     <Folder Include="ch06svm\" />
     <Folder Include="ch07adaboost\" />
     <Folder Include="ch08regresn\" />
+    <Folder Include="ch09tree\" />
+    <Folder Include="ch10kmean\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
