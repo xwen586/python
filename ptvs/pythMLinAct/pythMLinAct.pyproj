@@ -70,6 +70,12 @@
     <Compile Include="ch10kmean\a1kmeans.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ch11aprio\a1aprio.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch12fpgr\a1fpG.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="pythMLinAct.py" />
   </ItemGroup>
   <ItemGroup>
@@ -86,6 +92,8 @@
     <Folder Include="ch08regresn\" />
     <Folder Include="ch09tree\" />
     <Folder Include="ch10kmean\" />
+    <Folder Include="ch11aprio\" />
+    <Folder Include="ch12fpgr\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
