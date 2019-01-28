@@ -76,6 +76,12 @@
     <Compile Include="ch12fpgr\a1fpG.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ch13dimred\a1pca.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ch13dimred\b1pca.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="pythMLinAct.py" />
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +100,7 @@
     <Folder Include="ch10kmean\" />
     <Folder Include="ch11aprio\" />
     <Folder Include="ch12fpgr\" />
+    <Folder Include="ch13dimred\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
