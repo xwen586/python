@@ -28,6 +28,8 @@
     <Compile Include="ch02\c02list.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ch02\d01matr.py" />
+    <Compile Include="ch03liner\d01norm.py" />
     <Compile Include="ch11file\a01file.py">
       <SubType>Code</SubType>
     </Compile>
@@ -149,6 +151,7 @@
   <ItemGroup>
     <Folder Include="ch01\" />
     <Folder Include="ch02\" />
+    <Folder Include="ch03liner\" />
     <Folder Include="ch06func\" />
     <Folder Include="ch04dict\" />
     <Folder Include="ch07class\" />
