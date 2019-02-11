@@ -15,6 +15,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "pythMLBlue", "pythMLBlue\py
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "pythMLinAct", "pythMLinAct\pythMLinAct.pyproj", "{7A9B57E7-D3D7-483C-9DCB-460CDF58933F}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythDLtf", "PythDLtf\PythDLtf.pyproj", "{EF7C5BDD-E766-4B7A-81E7-93316387ACA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,8 @@ Global
 		{A3508B2F-2817-4C76-96DA-D60C674268D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A9B57E7-D3D7-483C-9DCB-460CDF58933F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7A9B57E7-D3D7-483C-9DCB-460CDF58933F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF7C5BDD-E766-4B7A-81E7-93316387ACA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF7C5BDD-E766-4B7A-81E7-93316387ACA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

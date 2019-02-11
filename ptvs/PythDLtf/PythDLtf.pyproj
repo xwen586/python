@@ -3,15 +3,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>7a9b57e7-d3d7-483c-9dcb-460cdf58933f</ProjectGuid>
+    <ProjectGuid>ef7c5bdd-e766-4b7a-81e7-93316387aca1</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>pythMLinAct.py</StartupFile>
+    <StartupFile>PythDLtf.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>pythMLinAct</Name>
-    <RootNamespace>pythMLinAct</RootNamespace>
+    <Name>PythDLtf</Name>
+    <RootNamespace>PythDLtf</RootNamespace>
     <InterpreterId>{2ace3ac2-2f2c-43b0-8385-a9ad206d16dd}</InterpreterId>
     <InterpreterVersion>3.5</InterpreterVersion>
   </PropertyGroup>
@@ -24,86 +24,66 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ch01basic\a01numpy.py">
+    <Compile Include="c01basic\a1style.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ch01basic\a02sklearn.py">
+    <Compile Include="c01basic\a2scope.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ch02knn\a1knn.py">
+    <Compile Include="c01basic\a3actfun.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ch02knn\a2match.py">
+    <Compile Include="c01basic\a4conv.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ch02knn\a3handw.py">
+    <Compile Include="c01basic\a5pool.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ch02knn\b1fruit.py">
+    <Compile Include="c01basic\a6crosEnt.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ch03dt\a1tree.py">
+    <Compile Include="c01basic\a7optm.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ch04bayes\a1bayes.py">
+    <Compile Include="c01basic\t1multply.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ch05logi\a1logReg.py">
+    <Compile Include="c01basic\t2lr.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ch06svm\a1svm.py">
+    <Compile Include="c02saver\a2modsave.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ch06svm\a1svm1.py" />
-    <Compile Include="ch07adaboost\a1adabt.py">
+    <Compile Include="c02saver\a3modrest.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ch08regresn\a1regr.py">
+    <Compile Include="c02saver\a4graph.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ch09tree\a1cart.py">
+    <Compile Include="mnist\fully_connected_feed.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ch09tree\a1trgui.py">
+    <Compile Include="mnist\mnist.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ch10kmean\a1kmeans.py">
+    <Compile Include="PythDLtf.py" />
+    <Compile Include="tensorboard\exmp02.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ch11aprio\a1aprio.py">
+    <Compile Include="tensorboard\exmp01.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ch12fpgr\a1fpG.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ch13dimred\a1pca.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ch13dimred\b1pca.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ch14mr\a1MeanMapper.py" />
-    <Compile Include="ch14mr\a2MeanReducer.py" />
-    <Compile Include="pythMLinAct.py" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{2ace3ac2-2f2c-43b0-8385-a9ad206d16dd}\3.5" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ch01basic\" />
-    <Folder Include="ch02knn\" />
-    <Folder Include="ch03dt\" />
-    <Folder Include="ch04bayes\" />
-    <Folder Include="ch05logi\" />
-    <Folder Include="ch06svm\" />
-    <Folder Include="ch07adaboost\" />
-    <Folder Include="ch08regresn\" />
-    <Folder Include="ch09tree\" />
-    <Folder Include="ch10kmean\" />
-    <Folder Include="ch11aprio\" />
-    <Folder Include="ch12fpgr\" />
-    <Folder Include="ch13dimred\" />
-    <Folder Include="ch14mr\" />
+    <Folder Include="c01basic\" />
+    <Folder Include="mnist\" />
+    <Folder Include="c02saver\" />
+    <Folder Include="tmp\" />
+    <Folder Include="tensorboard\" />
+    <Folder Include="tmp\mnist\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
