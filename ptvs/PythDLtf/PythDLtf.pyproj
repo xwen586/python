@@ -45,6 +45,12 @@
     <Compile Include="c01basic\a7optm.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="c01basic\a8queue.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="c01basic\q9queueRunner.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="c01basic\t1multply.py">
       <SubType>Code</SubType>
     </Compile>
@@ -71,6 +77,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="tensorboard\exmp01.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tensorboard\exmp03.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

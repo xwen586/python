@@ -7,11 +7,12 @@ https://zhuanlan.zhihu.com/p/37259681
 3）访问  http://localhost:8081
 """
 import tensorflow as tf
+import numpy as np
 
 ''' 常量加法
 未定义图名称
 '''
-def addgraph():
+def addofgph():
     a = 2
     b = 3
     c = tf.add(a, b, name='Add')
@@ -71,9 +72,36 @@ def placegph():
         writer.close()
 
 
+'''命名空间, tf.name_scope
+'''
+def nsgph():
+    #
+    with tf.name_scope("foo/bar") as scope: #variable_scope
+        c = tf.constant(np.pi, name='pi')
+        x = tf.placeholder(tf.float32, name='x')  #占位符 填充数据
+        s = tf.multiply( tf.square(x), c) # 圆面积
+    with tf.name_scope("foo/boll"):
+        y = tf.Variable(2.0, name='result')
+        update = tf.assign(y, s)
+    with tf.variable_scope("goo/var"):
+        v = tf.get_variable("v", 1.0)
+        v = v + c**2
+    output = y + 2*c
+        
+    print(x.name) # foo/bar/x:0
+    print(y.name) # foo/boll/result:0
+    with tf.Session() as sess:
+        writer = tf.summary.FileWriter(r"./tensorboard/logs/", sess.graph)
+        sess.run(tf.global_variables_initializer()) #初始化
+        print(sess.run([output, update], feed_dict={x:7.0}))#Feed操作
+        writer.close()
+
+
+
 ''' 主程序 '''
 if __name__=='__main__':
-    #addgraph()
+    #addofgph()
     #constgph()
     #vargph()
-    placegph()
+    #placegph()
+    nsgph()
